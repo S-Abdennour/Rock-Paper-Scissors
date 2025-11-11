@@ -21,4 +21,4 @@ This project can help beginner programmers in **Web Development** because it con
 
 2. Open index.html in your browser.
 
-3. Play and enjoy! .
+3. Play and enjoy! 
