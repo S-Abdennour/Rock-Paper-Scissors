@@ -18,3 +18,7 @@ This project can help beginner programmers in **Web Development** because it con
 1. Clone this repository  
    ```bash
    git clone https://github.com/yourusername/rock-paper-scissors.git
+
+2. Open index.html in your browser.
+
+3. Play and enjoy! .
