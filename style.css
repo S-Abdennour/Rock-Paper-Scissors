@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.928);
+    color: #fff;
+
+}
+.all
+{   display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.535);
+    background-color: rgba(0, 0, 0, 0.163);
+    width: 50em ;
+    height: 30em;
+    box-shadow: 0 0 15px 1px yellow;
+    
+
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-top: 30px;
+
+}
+.hero
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.rock
+{  
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0  0 10px 1px #fff;
+
+}
+.paper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0  0 10px 1px #fff;
+
+}
+.scissors
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0  0 10px 1px #fff;
+
+}
+.hero img
+{ 
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    
+
+}
+.rock:active , .paper:active , .scissors:active
+{
+    transform: scale(0.98);
+}
+#win-losse
+{  
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+#choice
+{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#score
+{   text-align: center;
+    font-size: 28px;
+   margin-top: 7px;
+}
+
+#resetScore
+{  
+     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width: 4em;
+    border-radius: 100%;
+    position:relative;
+    bottom: 32px;
+    left: 5px;
+    cursor: pointer;
+}
+#resetScore img
+{
+    width: 4em;
+    height: 4em;
+}
+#resetScore :hover
+{  
+    border-radius: 100%;
+    box-shadow: 0  0 10px 0.5px #fff;
+
+}
+#resetScore img:active
+{
+    transform: scale(0.98);
+}
+h2, h4{
+    margin: 0;
+
+}
+#my-rock ,#my-paper,#my-scissors
+{   display:none; 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    
+}
+#com-rock ,#com-paper,#com-scissors
+{   display:none; 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    
+}
