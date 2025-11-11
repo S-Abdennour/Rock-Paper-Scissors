@@ -46,7 +46,7 @@ header h1{
     height: 10em;
     border-radius: 100%;
     cursor: pointer;
-    box-shadow: 0  0 10px 1px #fff;
+    box-shadow: 0  0 5px 1px #fff;
 
 }
 .paper
@@ -58,7 +58,7 @@ header h1{
     height: 10em;
     border-radius: 100%;
     cursor: pointer;
-    box-shadow: 0  0 10px 1px #fff;
+    box-shadow: 0  0 5px 1px #fff;
 
 }
 .scissors
@@ -70,7 +70,7 @@ header h1{
     height: 10em;
     border-radius: 100%;
     cursor: pointer;
-    box-shadow: 0  0 10px 1px #fff;
+    box-shadow: 0  0 5px 1px #fff;
 
 }
 .hero img
@@ -80,6 +80,10 @@ header h1{
     object-fit: contain;
     
 
+}
+.rock:hover , .paper:hover , .scissors:hover
+{
+    box-shadow: 0  0 9px 1px #fff;
 }
 .rock:active , .paper:active , .scissors:active
 {
@@ -110,16 +114,17 @@ header h1{
 #resetScore
 {  
      margin: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 4em;
     width: 4em;
     border-radius: 100%;
     position:relative;
-    bottom: 32px;
+    bottom: 40px;
     left: 5px;
     cursor: pointer;
+    
 }
 #resetScore img
 {

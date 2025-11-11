@@ -31,12 +31,14 @@ const comScissors = document.getElementById("com-scissors");
 
 
 card.innerText= `wins: ${Score.MyScore}, Lossees: ${Score.ComScore},Round: ${Score.Round}`
-reset.onclick = function reset() 
+reset.onclick = function Reset() 
 {   
     card.innerText= `wins: ${Score.MyScore=0} Lossees: ${Score.ComScore=0} Round: ${Score.Round=0} `
     localStorage.setItem('Score',JSON.stringify(Score));
     winOrlosse.innerText= ` `;
     choice.style.display='none';
+    reset.style.display='none';
+    
 }
 
 function Random() 
@@ -59,7 +61,7 @@ function Random()
 
  function Play(mychoice)
 {   
-  
+  reset.style.display= 'flex';
      let ran =Random();
      Score.Round++;
 
