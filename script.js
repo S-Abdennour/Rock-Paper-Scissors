@@ -4,7 +4,7 @@ const paper = document.querySelector('.paper');
 const scissors = document.querySelector('.scissors');
 
 //* Save  in LocalStorage
-let Score = JSON.parse(localStorage.getItem('Score'));
+let Score = JSON.parse(localStorage.getItem('Score')) || { MyScore: 0, ComScore: 0, Round: 0 };
 
 //* Sellect div element of html
 const details = document.getElementById('showdetails');
