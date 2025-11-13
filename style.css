@@ -1,22 +1,25 @@
 body{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.928);
     color: #fff;
+    height: 100vh;
 
 }
 .all
-{   display: flex;
-    flex-direction: column;
-    margin-top: 5em;
+{   
+    display: flex;
+    flex-direction: column;  
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.535);
     background-color: rgba(0, 0, 0, 0.163);
-    width: 50em ;
-    height: 30em;
+    width: 70%;
+    max-width: 900px;
+    height: auto;
     box-shadow: 0 0 15px 1px yellow;
-    
+    padding-bottom: 10px;
 
 }
 header h1{
@@ -35,7 +38,7 @@ header h1{
     flex-wrap: wrap;
     gap: 7%;
     margin-top: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .rock
 {  
@@ -73,6 +76,15 @@ header h1{
     box-shadow: 0  0 5px 1px #fff;
 
 }
+ .rock, .paper, .scissors {
+    width: 13vw !important;
+    height: 13vw !important;
+  }
+  .rock img, .paper img, .scissors img {
+    width: 7vw !important;
+    height: 7vw !important;
+  }
+
 .hero img
 { 
     height: 100px;
@@ -94,22 +106,19 @@ header h1{
     text-align: center;
     margin: 0;
     font-family: sans-serif;
-    font-size: 27px;
-    margin-bottom: 10px;
+    font-size: 2.6vw;
+    margin-bottom: 23px;
 }
 #choice
 {
     display: flex ;
     justify-content: center;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 35px;
+   
 }
 
-#score
-{   text-align: center;
-    font-size: 28px;
-   margin-top: 7px;
-}
+
 
 #resetScore
 {  
@@ -117,19 +126,19 @@ header h1{
     display: none;
     justify-content: center;
     align-items: center;
-    height: 4em;
-    width: 4em;
+     width: 4.5vw;
+    height: 4.5vw;
     border-radius: 100%;
     position:relative;
-    bottom: 40px;
-    left: 5px;
+    bottom: 1px;
+    left: 10px;
     cursor: pointer;
     
 }
 #resetScore img
 {
-    width: 4em;
-    height: 4em;
+    width: 4.5vw;
+    height: 4.5vw;
 }
 #resetScore :hover
 {  
@@ -150,7 +159,7 @@ h2, h4{
     display: none;
     justify-content: center;
     align-items: center;
-    width: 2.5em;
+    width: 5vw;
     
 }
 #com-rock ,#com-paper,#com-scissors
@@ -158,6 +167,8 @@ h2, h4{
     display: none;
     justify-content: center;
     align-items: center;
-    width: 2.5em;
+    width: 5vw;
     
 }
+
+/* Start Media query */
